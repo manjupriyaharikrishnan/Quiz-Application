@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8" />
+    <title>Test Ur IQ</title>
+    <!--[if lt IE 9]><script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link href="css/jquery.booklet.latest.css" type="text/css" rel="stylesheet" media="screen, projection, tv" />
+    <link rel="stylesheet" type="text/css" href="css/testpage.css" />    
+    <link rel="shortcut icon" type="image/x-icon" href="images/fav-icon.png" />
+  </head>
+  
+  <body onload="start()" oncontextmenu='alert("OOPS!! No right click"); return false;'  >
+     <script src="js/jquery-1.11.0.js" type="text/javascript"></script>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/tripledes.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script> 
+      window.jQuery || document.write('<script src="js/jquery-2.1.0.min.js"><\/script>') 
+    </script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script> 
+      window.jQuery.ui || document.write('<script src="js/jquery-ui-1.10.4.min.js"><\/script>') 
+    </script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.booklet.latest.js"></script>
+    <script>
+      $(function () {   
+        $("#mybook").booklet();
+      });
+    </script>
+    <div id="timer">
+    <img src="images/timer.gif"/>
+    <div class="clear"></div>
+    <p id="display">time here</p>
+    </div>
+
+    <section>
+      <div id="mybook">
+        <div title="first page"> 
+          <h3>Question1</h3>
+          <img src="images/question1.png"/>
+        </div>
+        <div id="page2" title="second page">
+          <h3>select the answer</h3>
+          <div>
+            <img src="images/ques1option1.png"/>
+            <input type="radio" name="answer1" value="option1"></input>
+          </div>
+          <div>
+            <img src="images/ques1option2.png"/>
+            <input type="radio" name="answer1" value="option2"></input>
+          </div>
+          <div>
+            <img src="images/ques1option3.png"/>
+            <input type="radio" name="answer1" value="option3"></input>
+          </div>
+          <div>
+            <img src="images/ques1option4.png"/>
+            <input type="radio" name="answer1" value="option4"></input>
+          </div>
+        </div>
+        <div title="third page">
+          <h3>Question2</h3>
+          <img src="images/question2.png"/>
+        </div>
+        <div id="page4" title="select the answer">
+          <h3>select the answer</h3>
+          <div>
+            <img src="images/ques2option1.png"/>
+            <input type="radio" name="answer2" value="option1"></input>
+          </div>
+          <div>
+            <img src="images/ques2option2.png"/>
+            <input type="radio" name="answer2" value="option2"></input>
+          </div>
+          <div>
+            <img src="images/ques2option3.png"/>
+            <input type="radio" name="answer2" value="option3"></input>
+          </div>
+          <div>
+            <img src="images/ques2option4.png"/>
+            <input type="radio" name="answer2" value="option4"></input>
+          </div>
+        </div>
+        <div title="fifth page">
+          <h3>Question3</h3>
+          <img src="images/question3.png"/>
+        </div>
+        <div id="page6" title="sixth page">
+          <h3>select the answer</h3>
+          <div>
+            <img src="images/ques3option1.png"/>
+            <input type="radio" name="answer3" value="option1"></input>
+          </div>
+          <div>
+            <img src="images/ques3option2.png"/>
+            <input type="radio" name="answer3" value="option2"></input>
+          </div>
+          <div>
+            <img src="images/ques3option3.png"/>
+            <input type="radio" name="answer3" value="option3"></input>
+          </div>
+          <div>
+            <img src="images/ques3option4.png"/>
+            <input type="radio" name="answer3" value="option4"></input>
+          </div>
+        </div>
+        <div title="seventh page">
+          <h3>Question4</h3>
+          <img src="images/question4.png"/>
+        </div>
+        <div id="page8" title="eighth page">
+          <h3>select the answer</h3>
+          <div>
+            <input type="radio" name="answer4" value="option1"></input>
+            <img src="images/ques4option1.png"/>
+          </div>
+          <div>
+            <input type="radio" name="answer4" value="option2"></input>
+            <img src="images/ques4option2.png"/>
+          </div>
+          <div>
+            <input type="radio" name="answer4" value="option3"></input>
+            <img src="images/ques4option3.png"/>
+          </div>
+          <div>
+            <input type="radio" name="answer4" value="option4"></input>
+            <img src="images/ques4option4.png"/>
+          </div>
+        </div>
+        <div title="nineth page">
+          <h3>Question5</h3>
+          <img src="images/question5.png"/>
+        </div>
+        <div id="page10" title="tenth page"> 
+          <h3>select the answer</h3>
+          <div>
+            <img src="images/ques5option1.png"/>
+            <input type="radio" name="answer5" value="option1"></input>
+          </div>
+          <div>
+            <img src="images/ques5option2.png"/>
+            <input type="radio" name="answer5" value="option2"></input>
+          </div>
+          <div>
+            <img src="images/ques5option3.png"/>
+            <input type="radio" name="answer5" value="option3"></input>
+          </div>
+          <div>
+            <img src="images/ques5option4.png"/>
+            <input type="radio" name="answer5" value="option4"></input>
+          </div>
+        </div>
+        <div title="11th page">
+          <h3>Question6</h3>
+          <img src="images/question6.png"/>
+        </div>
+        <div id="page12" title="12th page">
+          <h3>select the answer</h3>
+          <div>
+            <img src="images/ques6option1.png"/>
+            <input type="radio" name="answer6" value="option1"></input>
+          </div>
+          <div>
+            <img src="images/ques6option2.png"/>
+            <input type="radio" name="answer6" value="option2"></input>
+          </div>
+          <div>
+            <img src="images/ques6option3.png"/>
+            <input type="radio" name="answer6" value="option3"></input>
+          </div>
+          <div>
+            <img src="images/ques6option4.png"/>
+            <input type="radio" name="answer6" value="option4"></input>
+          </div>
+        </div>
+        <div title="13th page">
+          <h3>Question7</h3>
+          <img src="images/question7.png"/>  
+        </div>
+        <div id="page14" title="14th page">
+          <h3>select the answer</h3>
+          <div>
+            <img src="images/ques7option1.png"/>
+            <input type="radio" name="answer7" value="option1"></input>
+          </div>
+          <div>
+            <img src="images/ques7option2.png"/>
+            <input type="radio" name="answer7" value="option2"></input>
+          </div>
+          <div>
+            <img src="images/ques7option3.png"/>
+            <input type="radio" name="answer7" value="option3"></input>
+          </div>
+          <div>
+            <img src="images/ques7option4.png"/>
+            <input type="radio" name="answer7" value="option4"></input>
+          </div>   
+        </div>
+        <div title="15th page">
+          <h3>Question8</h3>
+          <img src="images/question8.png"/>  
+        </div>
+        <div id="page16" title="16th page">
+          <h3>select the answer</h3>
+          <div>
+            <img src="images/ques8option1.png"/>
+            <input type="radio" name="answer8" value="option1"></input>
+          </div>
+          <div>
+            <img src="images/ques8option2.png"/>
+            <input type="radio" name="answer8" value="option2"></input>
+          </div>
+          <div>
+            <img src="images/ques8option3.png"/>
+            <input type="radio" name="answer8" value="option3"></input>
+          </div>
+          <div>
+            <img src="images/ques8option4.png"/>
+            <input type="radio" name="answer8" value="option4"></input>
+          </div>   
+        </div>
+      </div>
+    </section>
+    <div>
+      <button id="finishTest">Finish Test</button>
+    </div>
+    <div class="status">
+      <h6>completion status</h6>
+      <p id="ansCount">0/8</p>
+    </div>
+    <section>
+      <form id="confirm" method="post" action="final.html">
+        <p id="num"></p>
+        <p>Are you sure to finish the test?</p>
+        <button id="yes" onclick="yesfun()">Yes</button>
+        <button id="no">No</button>
+      </form>
+    </section>
+    <script type="text/javascript" src="js/testpage.js"></script>
+  </body>
+</html>

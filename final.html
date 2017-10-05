@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Test Ur IQ</title>
+        <link rel="shortcut icon" type="image/x-icon" href="images/fav-icon.png" />
+        <link href="css/reset.css" rel="stylesheet" type="text/css">
+        <link href="css/score.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body oncontextmenu='alert("OOPS!!! No right click"); return false;'>
+        <div class="wrapper">
+            
+            <a href="login.html"><img id="logo" src="images/logo1.png"/></a>
+            <button id="status">Click here to know overall Range</button>
+            
+            <div class="graph">
+            
+                <div class="result">
+                    <p>Your IQ is in </p>
+                    <p class="intelligence"></p> 
+                    <p>Range</p> 
+                </div><!--result div ends-->
+            
+                <div class="imageSlider">
+                    <img src="images/curved_arrow.png" >
+                    <p id="iq">Your IQ</p>               
+                </div><!--imageslider div ends-->
+            
+                <div class="rect1 rect"></div>
+                <div class="rect2 rect"></div>
+                <div class="rect3 rect"></div>
+                <div class="rect4 rect"></div>
+                <div class="rect5 rect"></div>
+                <div class="rect6 rect"></div>
+                <div class="rect7 rect"></div>
+                <div class="rect8 rect"></div>            
+            
+            </div><!--graph div ends-->
+            
+            <ul id="label">
+                <li>A</li>
+                <li>B</li>
+                <li>C</li>
+                <li>D</li>
+                <li>E</li>
+                <li>F</li>
+                <li>G</li>
+                <li>H</li>
+            </ul>        
+            
+            <div class="show">
+                <ul id="gradelet">
+                    <li class="head">Grade</li>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                    <li>D</li>
+                    <li>E</li>
+                    <li>F</li>
+                    <li>G</li>
+                    <li>H</li>
+                </ul> 
+           	
+                <ul id="grade">
+                    <li class="head">Grade</li>
+                    <li>Genius</li>
+                    <li>Gifted</li>
+                    <li>Above average</li>
+                    <li>Higher average</li>
+                    <li>Lower average</li>
+                    <li>Below average</li>
+                    <li>Borderline low</li>  
+                    <li>Low</li>      
+                </ul>        
+            
+                <ul id="range">
+                    <li class="head">Range</li>
+                    <li>&gt; 144</li>
+                    <li>130-144</li>
+                    <li>115-129</li>
+                    <li>100-114</li>
+                    <li>85-99</li>
+                    <li>70-84</li>
+                    <li>55-69</li>
+                    <li>&lt; 55</li>
+                </ul>
+            
+                <button id="close"></button>      
+            
+            </div><!--show div ends-->
+        
+        </div><!--wrapper div ends-->
+        
+        <!--script links-->
+        <script src="js/jquery-1.11.0.js" type="text/javascript"></script>
+        <script src="js/testpage.js" type="text/javascript"></script>
+        <script src="js/final.js" type="text/javascript"></script>
+    </body>
+</html>

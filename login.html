@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Test Ur IQ</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo1.png" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/login.css" rel="stylesheet" type="text/css">
+</head>
+
+<body oncontextmenu='alert("OOPS!!! No right click"); return false;' >
+    <div class="wrapper">
+        <a href="login.html"><img id="logo" src="images/logo1.png"/></a>
+        <div class="clear"></div>
+        <div class="intro">
+            <p id="defn1">
+                Free IQ test
+            </p>
+            <p id="defn3">
+                When you complete this free IQ test you get an instant estimate of your IQ score. 
+                It takes less than five minutes and delivers a straightforward indication of your intelligence. 
+                Share your IQ score with your friends. Learn if you might qualify for membership of the High IQ society.
+            </p>            
+            <p id="defn4">
+                It’s free, fast, fun and without any obligations. Got IQ?
+            </p>
+        </div><!--intro div ends-->
+        <form id="login" action="basic.html" method="post">
+        	<div class="details">
+                <input id="name" type="text" name="name"  placeholder="Enter Ur Name"/>
+                <div class="clear"></div> 
+                <select id="age">
+                    <option>--select ur age--</option>
+                    <option id="below">below18</option>
+                    <option id="above">above18</option>
+                </select>
+            </div><!--details div ends-->
+            <div class="clear"></div>            
+            <button id="start">start the test</button>
+        </form>
+        <button id="help" onclick="instructions()">Instructions</button>
+           
+        <div id="instruction">
+    <p>To navigate through questions,you can</p>   
+    <p>hover over edge of pages</p>
+    <p>Time taken to answer questions 'll be considered</p>
+     <button id="close" onclick="unopen()"></button>   
+    </div>
+    </div>
+
+    </div><!--wrapper ends-->
+    <script src="js/jquery-1.11.0.js" type="text/javascript"></script>
+    <script src="js/testpage.js" type="text/javascript"></script>
+</body>
+</html>
